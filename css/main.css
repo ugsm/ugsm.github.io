@@ -117,12 +117,12 @@ header {
 
 .bc {
   position: absolute;
-  width: 100px;
+  width: 114px;
   height:40px;
   background-color: cornflowerblue;
   border: cornflowerblue solid 1px;
   border-radius: 12.5px;
-  margin-top: 91px;
+  margin-top: 121px;
   margin-left: 91%;
   z-index: 2;
 }
@@ -185,6 +185,7 @@ header {
   position:relative;
   width: 100%;
   height: auto;
+  margin-top:25px;
 }
 
 .about {
