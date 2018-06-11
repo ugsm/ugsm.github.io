@@ -22,22 +22,44 @@
   <!--[if lte IE 9]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
+
   <header>
-    <div class="header__preview">
-      <img src="img/preview.png" class="header__preview__image">
-      <h1 class="header__preview__phone__number">8-988-888-999</h1>
-      <h1 class="header__preview__phone__number">8-988-888-999</h1>
-    </div>
-    <img src="img/slide.jpg" class="header__slide">
+
+    <button class="bc">Обратный звонок</button>
+
+    <img src="img/preview.png" class="hdr__preview__img">
+
+    <img src="img/slide.png" class="hdr__slide__img">
+
   </header>
 
   <div class="slider">
-    <button class="slider__button__back" onclick="bk_clk()">Назад</button>
+
+    <button class="slider__button__next" onclick="bk_clk()"><img class="slider__button__next__img" src="img/back.png"></button>
+
     <div class="slider__block">
+
+      <p class="slider__text" id="slider_text_1">Авто-кран Клинцы.</p>
       <img class="slider__image" id="slider_image" src="img/pro1.png">
-      <p class="slider__text" id="slider_text">Авто-кран Клинцы 25 тонн.</p>
+      <p class="slider__text" id="slider_text_2">Грузоподьёмность: 25 тн. Длина стрелы: 21 м.</p>
+      <button class="cash__pay">Заказать</button>
+
     </div>
-    <button class="slider__button__next" onclick="nt_clk()">Вперед</button>
+
+    <button class="slider__button__next" onclick="nt_clk()"><img class="slider__button__next__img" src="img/next.png"></button>
+
+  </div>
+
+  <div>
+
+    <img class="bestest" src="img/bestest.png">
+
+  </div>
+
+  <div>
+
+    <img class="bestest" src="img/about.png">
+
   </div>
 
   <!-- Add your site or application content here -->
@@ -46,6 +68,36 @@
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
+
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript" >
+    (function (d, w, c) {
+      (w[c] = w[c] || []).push(function() {
+        try {
+          w.yaCounter48810818 = new Ya.Metrika({
+            id:48810818,
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true,
+            webvisor:true
+          });
+        } catch(e) { }
+      });
+
+      var n = d.getElementsByTagName("script")[0],
+        s = d.createElement("script"),
+        f = function () { n.parentNode.insertBefore(s, n); };
+      s.type = "text/javascript";
+      s.async = true;
+      s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+      if (w.opera == "[object Opera]") {
+        d.addEventListener("DOMContentLoaded", f, false);
+      } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+  </script>
+  <noscript><div><img src="https://mc.yandex.ru/watch/48810818" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+  <!-- /Yandex.Metrika counter -->
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
